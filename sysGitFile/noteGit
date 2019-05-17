@@ -1,0 +1,42 @@
+
+新建的
+
+已存在的
+
+git add . --all
+git commit -m "changeFrom20190510_00_30"
+git push -u origin master
+
+Usename ZYYQR-pqaz159753
+
+git init
+git add
+git commit -m "first"
+git remote add origin https://github.com/ZYYQR/tmpo001.git
+git push -u origin master
+git add ./aaatmp/ --all
+git remote add origin  https://github.com/ZYYQR/tmpo001.git
+git commit -m "s10010101"
+git push -u origin master
+
+git remote add origin https://github.com/ZYYQR/tmpo001.git
+
+
+09:41:00.179: [tmpo001] git -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -- BullfightLandlords/sortTed.py
+09:41:52.551: [tmpo001] git -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -- myy_5_group_web/liqingzhao/wei.gif myy_5_group_web/liqingzhao/li4.gif myy_5_group_web/liqingzhao/li3.jpg myy_5_group_web/liqingzhao/7943290_154646412329_2[1].jpg myy_5_group_web/liqingzhao/7943290_154519456320_2[1].jpg myy_5_group_web/liqingzhao/tou.gif myy_5_group_web/liqingzhao/li1.jpg myy_5_group_web/赏析.html myy_5_group_web/声声慢.html myy_5_group_web/作者简介.html myy_5_group_web/liqingzhao/li2.gif
+09:41:55.852: [tmpo001] git -c core.quotepath=false -c log.showSignature=false add --ignore-errors -A -f -- myy_5_group_web/liqingzhao/li2.gif BullfightLandlords/sortTed.py myy_5_group_web/liqingzhao/li1.jpg myy_5_group_web/liqingzhao/7943290_154519456320_2[1].jpg myy_5_group_web/作者简介.html myy_5_group_web/liqingzhao/li3.jpg myy_5_group_web/liqingzhao/wei.gif myy_5_group_web/liqingzhao/li4.gif myy_5_group_web/liqingzhao/7943290_154646412329_2[1].jpg myy_5_group_web/赏析.html myy_5_group_web/liqingzhao/tou.gif myy_5_group_web/声声慢.html
+09:41:56.106: [tmpo001] git -c core.quotepath=false -c log.showSignature=false commit -F C:\Users\Administrator\AppData\Local\Temp\git-commit-msg-.txt --signoff --
+[master fc1296b] 水艺天下
+ 12 files changed, 194 insertions(+)
+ create mode 100644 BullfightLandlords/sortTed.py
+ create mode 100644 myy_5_group_web/liqingzhao/7943290_154519456320_2[1].jpg
+ create mode 100644 myy_5_group_web/liqingzhao/7943290_154646412329_2[1].jpg
+ create mode 100644 myy_5_group_web/liqingzhao/li1.jpg
+ create mode 100644 myy_5_group_web/liqingzhao/li2.gif
+ create mode 100644 myy_5_group_web/liqingzhao/li3.jpg
+ create mode 100644 myy_5_group_web/liqingzhao/li4.gif
+ create mode 100644 myy_5_group_web/liqingzhao/tou.gif
+ create mode 100644 myy_5_group_web/liqingzhao/wei.gif
+ create mode 100644 myy_5_group_web/作者简介.html
+ create mode 100644 myy_5_group_web/声声慢.html
+ create mode 100644 myy_5_group_web/赏析.html

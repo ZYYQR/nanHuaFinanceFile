@@ -1,0 +1,5 @@
+./documents/d1.requirements/原始需求/现货期权计算器.xlsm
+./documents/d1.requirements/原始需求/盯市报告、到期清算报告、奖金计算、陶旸利息业务逻辑说明.docx
+./documents/d1.requirements/原始需求/风控及损益计算说明书（141230修改）.docx
+./documents/d2.designs/原始资料/CTP_API开发文档资料/组合合约持仓计算规则.pdf
+./documents/d2.designs/原始资料/kingstar/kingstar持仓各资金项计算规则.xls

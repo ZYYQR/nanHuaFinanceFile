@@ -1,0 +1,9 @@
+git init
+git add
+git commit -m "first"
+git remote add origin https://github.com/ZYYQR/tmpo001.git
+git push -u origin master
+git add ./aaatmp/ --all
+git remote add origin  https://github.com/ZYYQR/tmpo001.git
+git commit -m "s10010101"
+git push -u origin master

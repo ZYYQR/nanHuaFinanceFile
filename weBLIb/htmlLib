@@ -1,0 +1,33 @@
+
+    -- 学习html知识 学习知识
+
+   [动态资源与静态资源](https://www.cnblogs.com/toov5/p/9919979.html)
+     
+     动静分离将网站静态资源（HTML，JavaScript，CSS，img等文件）与后台应用分开部署，提高用户访问静态代码的速度，降低对后台应用访问。这里我们将静态资源放到nginx中，动态资源转发到tomcat服务器中。
+  
+  [html 里的css 和Js 的代码怎么插入？](https://zhidao.baidu.com/question/388339966.html)
+  
+        第三种：首先创建css文件，在css文件中写css代码，其次在html文件的标签中实现
+    格式：<style type="text/css">@import url(css文件的路径);</style>
+    第四种：引入外部的资源文件，使用头标签link实现
+    格式：<link rel="stylesheet" type="text/css" href="css的路径"/>
+    js和html的结合方式：
+    第一种：使用html的标签
+    格式：<script type="text/javascript">js代码</script>
+    第二种：首先创建js文件，其次在html文件中引用
+    格式：<script type="text/javascript" src="js文件的路径"></script>
+    
+    
+    <LINK media=screen,print href="url …（绝对路径）…" type=text/css rel=stylesheet>
+    <script language="JavaScript" src="url …（绝对路径）…" ></script>
+  [如何理解HTML、CSS和JS三者分离](https://blog.csdn.net/jaycemxy/article/details/79801592)
+    
+      4、不要用JS去负责样式！！！（千万别写div.show或div.hide）正确做法是加一个class去切换状态，该是什么样子让CSS来搞定。eg：
+
+  [html5+css+js简单了解](https://blog.csdn.net/awiner/article/details/78916307)
+  
+    css色彩和js的动态感觉html5也是特别的单调。还有一点是html编写错误之后是可以运行的，所以要好好且认真的去编写，省的到最后千行代码之中去检查哪个字符的错误，Pycharm可以自动首字母提示代码行
+    
+  [HTML，CSS，JavaScript知识树思维导图](https://blog.csdn.net/zr15829039341/article/details/79553020)
+  
+  

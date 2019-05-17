@@ -1,0 +1,4 @@
+python
+import time
+stime = time.strftime('%Y.%m.%d %I:%M:%S',time.localtime(time.time()))
+print(stime)
