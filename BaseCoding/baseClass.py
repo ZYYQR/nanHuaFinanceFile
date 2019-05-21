@@ -180,16 +180,15 @@ class excelCompare():
 
 if __name__ == "__main__":
 
-    excelpath1 = "D:/PyCharmZyyFile/Ztmp/ctrlv/11111111111111.xls"
+    excelpath1 = "c:/Users/Administrator/Downloads/web20190517.xls"
 
-    excelpath2 = "D:/PyCharmZyyFile/Ztmp/ctrlv/CustomFundsWaterWEB.xls"
-
+    excelpath2 = "c:/Users/Administrator/Downloads/web20190517PC.xls"
 
     pathExcel11 = excelpath1
     pathExce2222 = excelpath2
     s = excelCompare(pathExcel=pathExcel11, pathExcel2= pathExce2222)
     s.doubleExcelConRow(nsheets=0, k = 1)
-    # s.sortingTheExcel(nsheets=0, n = 7 , ncols = 6)
+    s.sortingTheExcel(nsheets=0, n = 7 , ncols = 6)
 
-    ki = [1,2,'gr',4., 'tetete']
+    # ki = [1,2,'gr',4., 'tetete']
     # s.writeTheExcel(innerD=ki)
