@@ -1,10 +1,17 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
 import xlrd
 import os
 class excelCompare():
+    '''
+    excel文件差异对比
+    对比, 行, 列;
 
+    对比, 限定列
+
+    跳过 m 列 对比;
+
+    '''
     def __init__(self, pathExcel , pathExcel2):
         self.pathExcel = pathExcel
         self.pathExce2 = pathExcel2
@@ -180,9 +187,9 @@ class excelCompare():
 
 if __name__ == "__main__":
 
-    excelpath1 = "c:/Users/Administrator/Downloads/web20190517.xls"
+    excelpath1 = "c:/Users/Administrator/Downloads/Alloptionssummarypc.xls"
 
-    excelpath2 = "c:/Users/Administrator/Downloads/web20190517PC.xls"
+    excelpath2 = "c:/Users/Administrator/Downloads/AlloptionssummaryWeb.xls"
 
     pathExcel11 = excelpath1
     pathExce2222 = excelpath2
