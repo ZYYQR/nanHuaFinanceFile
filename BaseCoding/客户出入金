@@ -6,17 +6,57 @@
 2. 抛补出入金(5, (扣减 可用余额(即 AuditPass-Effective Reduction))[(抛补账户(+5)), (可取余额(-5)], 边界值 可取余额, 出抛补额度 不能超过 抛补余额-账户内额度;
 
 3. 投资收益/支出(444,审核通过-生效增(Effective Increase)), [(可用余额(+444))], 边界值 可用余额-数值;
+[投资支出(创建), -100, (balanceValueSize - 100(即 -100)),(冻结普通资金frozenCommon(+100))], [审核, (冻结普通资金frozenCommon(-100))];
 
 4. 抛补收益/支出(555, 审核通过-生效增),[抛补余额(+555)], 边界值 抛补余额valueSize;
+[创建, 抛补支出, 20, (抛补冻结资金hedgeFrozenCapital(+20),(抛补余额hedgeBalance(-20)), AuditPass, (抛补冻结资金hedgeFrozenCapital(-20))]
 
 5. 在途资金变动(66, 创建后 扣减-(边界值=日内授信额度(如日内100, 则在途200不可创建)), 边界值不满足, 应-无法创建),[(在途资金(+66)), (可取余额(+66))], 扣减-边界值, 在途资金ValueSize;
 
-6. 客户授信额度变动(100, AuditPass-Effective Increase)[(日内授信额度(+100)), (授信额度(+100))],
-[现有(信用额度, 322, 授信额度322, 授信余额100)
-]边界值 (已使用授信额度=<授信余额), 边界值 ValueSize = 授信余额 -已使用授信额度 ;
+6. 客户授信额度变动(100, AuditPass-Effective Increase)[(授信额度creditLine(+100)), (授信余额(+100))], ==========
+[现有(信用额度creditLine, 322, 授信额度 322, 授信余额100)]
+边界值 (已使用授信额度=<授信余额), 边界值 ValueSize = 授信余额 - 已使用授信额度; [扣减, 创建后审批前 10: (授信额度creditLine(-10)), (授信余额(-10))(抛补冻结资金hedgeFrozenCapital];
 
-7. 客户资金账户与抛补资金(100, AuditPass-Effective Increase),[(抛补余额hedgeBalance(+100)), (可用余额balance(+100)], 边界值-抛补余额hedgeBalance-ValueSize;
+7. 客户资金账户与抛补资金(100, AuditPass-Effective Increase),[(抛补余额hedgeBalance(+100)), (可用余额balance(+100)],
+边界值-抛补余额hedgeBalance-ValueSize, [出金159,(可用余额(-159), 冻结普通资金frozenCommon(+159)), (抛补余额(-159))];
 
 8.客户日内授信额度变动(100, AuditPass-Effective-Increase), [(日内授信额度creditLineDay(+100))], 边界值 日内授信额度ValueSize;
 
 9. 利息收益(100, AuditPass-Effective-Increase), [(可用余额balance(+100))], 边界值  可用余额balance-ValueSize;
+[扣减-创建后, 审核前, (出金)456, 冻结普通资金frozenCommon(+456), balance(-456),
+审核后, frozenCommon(-456)]
+
+字段说明:
+{
+	"success": true,
+	"page": {
+		"datas": null,
+		"obj": [{
+			"clientId": 22,客户ID
+			"clientNo": 17,客户编号
+			"clientType": 65,客户类型
+			"balance": 422.0,可用余额
+			"premium": 0.0,权利金
+			"margin": 0.0,保证金
+			"frozenCommon": 0.0,冻结普通资金
+			"frozenPremium": 0.0,冻结权利金
+			"frozenMargin": 0.0,冻结保证金
+			"cashInOut": 90.0,累计净出入金
+			"transitMoney": 0.0,在途资金
+			"transitMoneyEntryDay": "1000-01-01",在途资金到期日期
+			"creditLine": 0.0,授信额度
+			"creditUsed": 0.0,已使用授信额度
+			"creditBalances": 0.0,授信余额
+			"hedgeBalance": 677.0, 抛补余额
+			"hedgeFrozenCapital": 0.0,抛补冻结资金
+			"equityMarginCall": 0.0,
+			"creditLineDay": 0.0,日内授信额度
+			"clientName": "009"客户姓名(企业名称)
+		}],
+		"totalno": 1,
+		"pageno": 1,页码
+		"totalsize": 1,总页数
+		"pagesize": 20,页条数
+		"startindex": 0起始页页码
+	}
+}

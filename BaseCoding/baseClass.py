@@ -6,9 +6,7 @@ class excelCompare():
     '''
     excel文件差异对比
     对比, 行, 列;
-
     对比, 限定列
-
     跳过 m 列 对比;
 
     '''
@@ -148,12 +146,18 @@ class excelCompare():
                     '''
                     cixulist.append(x)
                     '''points  ['A0001', 'A0004', 'A0016', 'A0051', 'A0054', 'A0055'] 6'''
-
                 else:
+                    if i == points[oxx]:
+                        print(type(i))
+
+                        pass
+                    else:
+                        pass
                     pass
                 o = o + 1
             # ox = ox - 1
         print('sort cixulist ', cixulist)
+        print('sort cixulist[last] ', cixulist[-1])
         for i in cixulist:
             # listwri = table_excel1.row_values( o + 1)
             # sheetnamewri = sheetname1
@@ -182,14 +186,20 @@ class excelCompare():
             table_excel2_row = table_excel2.row_values(i)
 
         cha1 = set(table_excel1_row).difference(table_excel2_row)
+        cha2 = set(table_excel2_row).difference(table_excel2_row)
+        cha3 = list(set(cha1)^set(cha2))
+        print('Is this file diffience', cha3)
         pass
 
 
 if __name__ == "__main__":
+    #
+    # excelpath1 = "F:/tmp/Alloptionssummarypc.xls"
+    #
+    # excelpath2 = "F:/tmp/AlloptionssummaryWeb.xls"
 
-    excelpath1 = "c:/Users/Administrator/Downloads/Alloptionssummarypc.xls"
-
-    excelpath2 = "c:/Users/Administrator/Downloads/AlloptionssummaryWeb.xls"
+    excelpath1 = "F:/tmp/456.xls"
+    excelpath2 = "F:/tmp/456_21.xls"
 
     pathExcel11 = excelpath1
     pathExce2222 = excelpath2
@@ -199,3 +209,5 @@ if __name__ == "__main__":
 
     # ki = [1,2,'gr',4., 'tetete']
     # s.writeTheExcel(innerD=ki)
+    print("Attention ~ Note that the size of this file is limited to 7.1 megabytes to open, with 17754 lines(attention size is not really point)")
+
